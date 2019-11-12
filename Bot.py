@@ -305,4 +305,5 @@ Channel: %s
     except Exception as e:
         prt(e)
 
-client.run("NjQyMzgwNjE0NTQ0MzkyMjAy.XcWHqQ.M4RveP-L0C9txJwNiThYBoQ7Tvg")
+client.run(open('token.txt','r').read()+'\n')
+client.close()
