@@ -3,4 +3,4 @@ asyncio
 time
 random
 configparser
-_thread
+"_thread"
