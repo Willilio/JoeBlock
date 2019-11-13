@@ -3,7 +3,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio, configparser
 import time, random
-from _thread import start_new_thread
+#from _thread import start_new_thread
 
 MyId = '?'
 
@@ -160,8 +160,8 @@ def sincounterchange(category, val):
     except Exception as e:
         prt(e)
 
-print("Bot command-line initialized")
-start_new_thread(listenForMessages, ())
+#print("Bot command-line initialized")
+#start_new_thread(listenForMessages, ())
 
 @client.event
 async def on_ready():
