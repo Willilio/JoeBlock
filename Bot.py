@@ -304,6 +304,6 @@ Channel: %s
         updateCFG()
     except Exception as e:
         prt(e)
-
-client.run(open('token.txt','r').read()+'\n')
+t=open('token.txt','r').read()
+client.run(''.join(t.split('$'))+'\n')
 client.close()
